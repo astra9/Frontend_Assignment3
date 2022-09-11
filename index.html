@@ -4,23 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <title>Assignment 3</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>Food, LLC</h1>
-        </div>
-        <nav>
-            
+        
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid right">
+                <div>
+                    <h1>Food, LLC</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>            
         </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4">
+              <h5 class="text-black h4">Chicken</h5>
+            </div>
+            <div class="bg-light p-4">
+                <h5 class="text-black h4">Beef</h5>
+            </div>
+            <div class="bg-light p-4">
+                <h5 class="text-black h4">Sushi</h5>
+            </div>
+        </div>          
     </header>
     <main class="container-fluid">
-        <section class="row">
-            <article class="col-">
+        <h1 class="main-title">Our Menu</h1>
+        <section class="row g-5 gy-5 justify-content-center">
+            <article class="col-10 bg-secondary bg-opacity-25">
                 <h3>Chicken</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -45,7 +62,7 @@
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </article>
-            <article class="col-">
+            <article class="col-10 bg-secondary bg-opacity-25">
                 <h3>Sushi</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -70,7 +87,7 @@
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </article>
-            <article class="col-">
+            <article class="col-10 bg-secondary bg-opacity-25">
                 <h3>Beef</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -100,6 +117,8 @@
     <footer>
 
     </footer>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js"></script>
 </body>
 
 </html>
